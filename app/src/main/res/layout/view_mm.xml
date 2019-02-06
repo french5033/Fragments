@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="351dp"
+        android:layout_height="466dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="In Magical Melody, the player arrives in town after reading an advertisement that he or she saw in the newspaper. The player will then meet Theodore, the town's mayor, in Town Square. The player will be prompted to pick a name for his/her character, as well as the farm. The player will also get to choose where the character's starting home will be from among three different locations.  Once a home has been chosen, the player will settle into his/her new home. Upon sleeping, the character will have a dream of somewhat a reality which is a flash-back or vision of what happened years ago. The player is awoken the next day to the presence of the Harvest Sprites, who are surprised that the player can see them. The sprites were also shown in the dream the character had, leading to suprise and shock. The sprites will ask the player to help them, and the player will then be enlisted by the sprites to awaken the Harvest Goddess, along with the rival farmer Jamie, who has turned herself to stone out of melancholy at the townspeople's disregard.  The player's goal is to collect musical notes so that the Harvest Goddess can be resurrected. While the sprites say that 100 notes are needed to free the Goddess, only 50 notes are required to awaken her. Once the Goddess is awakened, it is still possible to get all 100 notes and complete the game."
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.068" />
+
+    <Button
+        android:id="@+id/back_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/back_to_menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+</android.support.constraint.ConstraintLayout>

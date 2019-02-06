@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 //check onclick log
                 Log.d(TAG, "onClick: clicked button ");
-                Intent intent = new Intent(MainActivity.this, Screen2.class);
+                Intent intent = new Intent(MainActivity.this, Menu1.class);
                 startActivity(intent);
                 toastMsg("Going to screen 2");
             }

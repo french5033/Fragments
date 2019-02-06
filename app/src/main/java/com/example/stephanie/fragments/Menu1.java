@@ -8,14 +8,14 @@ import android.widget.Toast;
 import android.view.View;
 import android.widget.Button;
 
-public class Screen2 extends AppCompatActivity {
+public class Menu1 extends AppCompatActivity {
 
     private static final String TAG = "MainActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.screen2_layout);
+        setContentView(R.layout.layout_menu);
 
         // Button setup
         Button back = (Button) findViewById(R.id.back_button);
@@ -41,7 +41,7 @@ public class Screen2 extends AppCompatActivity {
                 Log.d(TAG, "onClick: clicked button1 ");
                 toastMsg("Clicked back button");
 
-                Intent intent = new Intent(Screen2.this, MainActivity.class);
+                Intent intent = new Intent(Menu1.this, MainActivity.class);
                 startActivity(intent);
             }
         });
@@ -53,8 +53,8 @@ public class Screen2 extends AppCompatActivity {
                 //Log.d(TAG, "onClick: clicked 'A New Beginning'");
                 //toastMsg("Clicked 'A New Beginning'");
 
-                Intent intent = new Intent(Screen2.this, ListView1.class);
-                toastMsg("Going to Intent 2");
+                Intent intent = new Intent(Menu1.this, ANewBeginning.class);
+                toastMsg("A New Beginning Summary");
                 startActivity(intent);
             }
         });
@@ -65,6 +65,10 @@ public class Screen2 extends AppCompatActivity {
                 //check onclick log
                 Log.d(TAG, "onClick: clicked 'Magical Melody'");
                 toastMsg("Clicked 'Magical Melody'");
+
+                Intent intent = new Intent(Menu1.this, MagicalMelody.class);
+                toastMsg("Magical Melody Summary");
+                startActivity(intent);
             }
         });
 
@@ -107,6 +111,6 @@ public class Screen2 extends AppCompatActivity {
     }
 
     private void toastMsg(String msg){
-        Toast.makeText(Screen2.this,msg, Toast.LENGTH_SHORT).show();
+        Toast.makeText(Menu1.this,msg, Toast.LENGTH_SHORT).show();
     }
 }

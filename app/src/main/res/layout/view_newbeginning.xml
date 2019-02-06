@@ -8,19 +8,21 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="316dp"
-        android:layout_height="524dp"
+        android:layout_width="351dp"
+        android:layout_height="466dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
-        android:text="@string/hello"
+        android:text="@string/once_a_thriving_town_echo_village_is_almost_empty_after_the_inhabitants_lost_everything_in_a_poor_economy_your_parents_recently_offered_you_a_chance_to_renovate_the_abandoned_family_farm_but_reviving_a_successful_ranch_requires_rebuilding_the_town_can_you_find_the_materials_and_blueprints_that_allow_you_to_create_the_best_community_in_the_land"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.068" />
 
     <Button
         android:id="@+id/back_2"
