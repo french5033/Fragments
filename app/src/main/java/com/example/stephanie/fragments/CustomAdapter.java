@@ -1,33 +1,34 @@
 package com.example.stephanie.fragments;
 
 import android.content.Context;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
+import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.view.View;
-import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
 
-public class CustomAdapter extends ArrayAdapter<String> {
-
-    private static final String TAG = "MainActivity";
-
-    CustomAdapter(Context context, String[] names) {
-        super(context, R.layout.customlayout_view, names);
+class CustomAdapter extends ArrayAdapter<String> {
+    CustomAdapter(@NonNull Context context, String[] names) {
+        super(context, R.layout.custom_layout, names);
     }
 
+    @NonNull
     @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
+    public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
 
-        LayoutInflater customInflater = LayoutInflater.from(getContext());
-        View customView = customInflater.inflate(R.layout.customlayout_view, parent, false);
+        LayoutInflater inflate = LayoutInflater.from(getContext());
+        View customView = inflate.inflate(R.layout.custom_row, parent, false);
 
-        //String singleItem = getItem(position);
-        //TextView txt4 = (TextView) customView.findViewById(R.id.textView4);
-        //ImageView img2 = (ImageView) customView.findViewById(R.id.image); // add img id
-        Button btn = (Button) customView.findViewById(R.id.backbtn);
-        //img2.setImageResource(R.drawable.cover_300x);
+        String singleItem = getItem(position);
+        TextView textView = (TextView) customView.findViewById(R.id.textView);
+        ImageView image = (ImageView) customView.findViewById(R.id.imageView);
+
+        textView.setText(singleItem);
+        image.setImageResource(R.drawable.cover_300x);
 
         return customView;
     }
-
 }
