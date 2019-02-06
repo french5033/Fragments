@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Fragments</string>
+    <string name="button2">Button2</string>
+    <string name="button1">Start Here</string>
+    <string name="screen_2">Screen 2</string>
+    <string name="back">Back</string>
+    <string name="to_list_view">To List View</string>
+    <string name="button">Button</string>
+</resources>
