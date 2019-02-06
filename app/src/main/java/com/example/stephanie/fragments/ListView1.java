@@ -7,9 +7,12 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class ListView1 extends AppCompatActivity {
 
@@ -18,40 +21,24 @@ public class ListView1 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.screen2_layout);
-
-        // list view
-//
-//        android.widget.ListView listView;
-//        listView = (android.widget.ListView)findViewById(R.id.listview);
-//
-//        ArrayList<String> name = new ArrayList<>();
-//        name.add("Popuri");
-//        name.add("Blue");
-//        name.add("Chen");
-//        name.add("Cam");
-//        name.add("Alex");
-//        name.add("Carl");
-//
-//        ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, name);
-//        listView.setAdapter(adapter);
+        setContentView(R.layout.list_view);
 
         Log.d(TAG, "onCreate: List View");
 
-        // Button setup
-        Button lv_btn1 = (Button) findViewById(R.id.backbutton_2);
+        TextView tView2 = (TextView) findViewById(R.id.textView2);
 
-        // setup button onclick
-        lv_btn1.setOnClickListener(new View.OnClickListener() {
+        Button menu = (Button) findViewById(R.id.back_2);
+
+        // list view
+        menu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 //check onclick log
-                Log.d(TAG, "onClick: clicked button ");
+                Log.d(TAG, "onClick: Back to menu'");
 
                 Intent intent = new Intent(ListView1.this, Screen2.class);
                 startActivity(intent);
-
-                toastMsg("Going back to screen 2");
+                toastMsg("Back to menu");
             }
         });
 

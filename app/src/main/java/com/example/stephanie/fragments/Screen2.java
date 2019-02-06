@@ -20,8 +20,18 @@ public class Screen2 extends AppCompatActivity {
         // Button setup
         Button back = (Button) findViewById(R.id.back_button);
 
-        // to list view button
-        Button toListView = (Button) findViewById(R.id.toListViewButton);
+        // A New Beginning
+        Button game1 = (Button) findViewById(R.id.anb_btn);
+        // Magical Melody
+        Button game2 = (Button) findViewById(R.id.mm_btn);
+        // A Tale of Two Towns
+        Button game3 = (Button) findViewById(R.id.tott_btn);
+        // DS & DS Cute
+        Button game4 = (Button) findViewById(R.id.dsdscutebtn);
+        // Animal Parade
+        Button game5 = (Button) findViewById(R.id.anipar_btn);
+        // Tree of Tranquility
+        Button game6 = (Button) findViewById(R.id.tree_btn);
 
         // setup button onclick
         back.setOnClickListener(new View.OnClickListener() {
@@ -36,15 +46,64 @@ public class Screen2 extends AppCompatActivity {
             }
         });
 
-        // list view
-        toListView.setOnClickListener(new View.OnClickListener() {
+        game1.setOnClickListener(new View.OnClickListener() {
+            @Override
             public void onClick(View view) {
-                Log.d(TAG, "onClick: To List View ");
-                toastMsg("To List View");
-                Intent intent_2 = new Intent(Screen2.this, ListView1.class);
-                startActivity(intent_2);
+                //check onclick log
+                //Log.d(TAG, "onClick: clicked 'A New Beginning'");
+                //toastMsg("Clicked 'A New Beginning'");
+
+                Intent intent = new Intent(Screen2.this, ListView1.class);
+                toastMsg("Going to Intent 2");
+                startActivity(intent);
             }
         });
+
+        game2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //check onclick log
+                Log.d(TAG, "onClick: clicked 'Magical Melody'");
+                toastMsg("Clicked 'Magical Melody'");
+            }
+        });
+
+        game3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //check onclick log
+                Log.d(TAG, "onClick: clicked 'A Tale of Two Towns'");
+                toastMsg("Clicked 'A Tale of Two Towns'");
+            }
+        });
+
+        game4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //check onclick log
+                Log.d(TAG, "onClick: clicked 'DS & DS Cute'");
+                toastMsg("Clicked 'DS & DS Cute'");
+            }
+        });
+
+        game5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //check onclick log
+                Log.d(TAG, "onClick: clicked 'Animal Parade'");
+                toastMsg("Clicked 'Animal Parade'");
+            }
+        });
+
+        game6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //check onclick log
+                Log.d(TAG, "onClick: clicked 'Tree of Tranquility'");
+                toastMsg("Clicked 'Tree of Tranquility'");
+            }
+        });
+
     }
 
     private void toastMsg(String msg){

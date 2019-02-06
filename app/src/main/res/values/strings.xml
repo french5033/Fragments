@@ -5,5 +5,14 @@
     <string name="screen_2">Screen 2</string>
     <string name="back">Back</string>
     <string name="to_list_view">To List View</string>
-    <string name="button">Button</string>
+    <string name="harvest_moon_games">Harvest Moon Games</string>
+    <string name="a_new_beginning">A New Beginning</string>
+    <string name="magical_melody">Magical Melody</string>
+    <string name="a_tale_of_two_towns">A Tale Of Two Towns</string>
+    <string name="ds_ds_cute"><![CDATA[DS & DS CUTE]]></string>
+    <string name="animal_parade">Animal Parade</string>
+    <string name="tree_of_tranquility">Tree of Tranquility</string>
+    <string name="textview">TextView</string>
+    <string name="hello">HELLO</string>
+    <string name="back_to_menu">Back to menu</string>
 </resources>
