@@ -23,6 +23,8 @@
 
         <activity android:name=".MagicalMelody"></activity>
 
+        <activity android:name=".CustomLayout"></activity>
+
     </application>
 
 </manifest>

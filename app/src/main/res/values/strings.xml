@@ -3,7 +3,6 @@
     <string name="button2">Button2</string>
     <string name="button1">Start Here</string>
     <string name="screen_2">Screen 2</string>
-    <string name="back">Back</string>
     <string name="to_list_view">To List View</string>
     <string name="harvest_moon_games">Harvest Moon Games</string>
     <string name="a_new_beginning">A New Beginning</string>
@@ -12,8 +11,11 @@
     <string name="ds_ds_cute"><![CDATA[DS & DS CUTE]]></string>
     <string name="animal_parade">Animal Parade</string>
     <string name="tree_of_tranquility">Tree of Tranquility</string>
-    <string name="textview">TextView</string>
     <string name="hello">HELLO</string>
     <string name="back_to_menu">Back to menu</string>
     <string name="once_a_thriving_town_echo_village_is_almost_empty_after_the_inhabitants_lost_everything_in_a_poor_economy_your_parents_recently_offered_you_a_chance_to_renovate_the_abandoned_family_farm_but_reviving_a_successful_ranch_requires_rebuilding_the_town_can_you_find_the_materials_and_blueprints_that_allow_you_to_create_the_best_community_in_the_land">Once a thriving town, Echo Village is almost empty after the inhabitants lost everything in a poor economy. Your parents recently offered you a chance to renovate the abandoned family farm, but reviving a successful ranch requires rebuilding the town. Can you find the materials and blueprints that allow you to create the best community in the land?</string>
+    <string name="todo">TODO</string>
+    <string name="hm_img2">hm_img2</string>
+    <string name="to_custom_view">To Custom View</string>
+    <string name="textview">Text View</string>
 </resources>

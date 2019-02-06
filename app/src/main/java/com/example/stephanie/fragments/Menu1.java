@@ -33,6 +33,9 @@ public class Menu1 extends AppCompatActivity {
         // Tree of Tranquility
         Button game6 = (Button) findViewById(R.id.tree_btn);
 
+        // Custom view
+        Button custom = (Button) findViewById(R.id.toCustomView);
+
         // setup button onclick
         back.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -42,6 +45,18 @@ public class Menu1 extends AppCompatActivity {
                 toastMsg("Clicked back button");
 
                 Intent intent = new Intent(Menu1.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        custom.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //check onclick log
+                Log.d(TAG, "onClick: To Custom View ");
+                toastMsg("To Custom View");
+
+                Intent intent = new Intent(Menu1.this, CustomLayout.class);
                 startActivity(intent);
             }
         });
