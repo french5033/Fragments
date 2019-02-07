@@ -93,6 +93,10 @@ public class Menu1 extends AppCompatActivity {
                 //check onclick log
                 Log.d(TAG, "onClick: clicked 'A Tale of Two Towns'");
                 toastMsg("Clicked 'A Tale of Two Towns'");
+
+                Intent intent = new Intent(Menu1.this, TwoTowns.class);
+                toastMsg("Two Towns Summary");
+                startActivity(intent);
             }
         });
 
@@ -102,6 +106,10 @@ public class Menu1 extends AppCompatActivity {
                 //check onclick log
                 Log.d(TAG, "onClick: clicked 'DS & DS Cute'");
                 toastMsg("Clicked 'DS & DS Cute'");
+
+                Intent intent = new Intent(Menu1.this, DSCute.class);
+                toastMsg("DS & DS Cute Summary");
+                startActivity(intent);
             }
         });
 

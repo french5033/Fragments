@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="380dp"
+        android:layout_height="420dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/the_game_begins_with_the_harvest_goddess_a_deity_of_harvest_moon_and_the_witch_princess_fighting_neither_can_win_so_they_part_ways_the_witch_princess_on_meeting_the_harvest_goddess_next_attempts_to_cast_a_spell_to_silence_her_but_instead_petrifies_her_while_trying_to_undo_her_spell_the_witch_princess_inadvertently_sends_the_harvest_goddess_to_another_world_so_she_sends_all_of_the_harvest_sprites_small_elf_like_creatures_to_the_same_world_to_rescue_her_the_witch_princess_then_tells_the_player_to_bring_all_of_the_harvest_sprites_back_in_order_to_rescue_the_harvest_goddess_living_in_the_valley_are_a_number_of_villagers_nine_bachelorettes_and_five_rival_bachelors_the_characters_and_locations_in_harvest_moon_ds_are_the_same_as_those_in_harvest_moon_a_wonderful_life_with_a_few_minor_exceptions"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.135" />
+
+    <Button
+        android:id="@+id/menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/back_to_menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+</android.support.constraint.ConstraintLayout>

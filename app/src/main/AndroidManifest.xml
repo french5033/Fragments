@@ -25,6 +25,10 @@
 
         <activity android:name=".CustomLayout"></activity>
 
+        <activity android:name=".TwoTowns"></activity>
+
+        <activity android:name=".DSCute"></activity>
+
     </application>
 
 </manifest>
